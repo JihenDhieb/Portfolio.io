@@ -1,0 +1,143 @@
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+ @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Rochester&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+// Ajoutez un style pour les icônes
+.my-icon {
+  font-size: 20px;
+  color: #000000;
+   // Couleur personnalisée
+}
+i {
+    margin-right: 10px; // Ajoute une marge de 10 pixels à droite de l'icône
+  }
+  a {
+    font-size: 25px;
+    color: black; // Change la couleur du texte du lien en noir
+    text-decoration: none; 
+    font-family: 'Rochester';// Supprime le soulignement du lien, si vous le souhaitez
+  }
+.container {
+    display: flex;
+    height: 120vh; /* 100% de la hauteur de la vue (viewport height) */
+}
+
+.small {
+    flex: 1; /* La partie petite prend 1 unité de flexibilité */
+    background-color: rgb(253, 230, 244);
+    padding: 10px;
+   
+}
+
+.large {
+    flex: 4; /* La partie grande prend 3 unités de flexibilité */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* Styles pour le texte à l'intérieur de .small */
+.small h2 {
+    font-size: 30px;
+    color: #333; 
+    /* Couleur du texte pour le titre */
+    margin-bottom: 170px;
+    font-family: 'Rochester';
+}
+
+.small p {
+    color: #555; /* Couleur du texte pour le paragraphe */
+}
+.large p.change {
+   font-family: 'lora';
+   /* Couleur du texte pour le paragraphe */
+}
+/* Styles pour le texte à l'intérieur de .large */
+.large h2 {
+    text-align: left;
+    font-size: 50px;
+    color: #333; 
+    font-family: 'Rochester';
+    /* Couleur du texte pour le titre */
+} 
+
+
+/* Styles for .large p with animation */
+.large p.color-change {
+    color: #666;
+    font-size: 30px;
+    animation: colorChange 2s ease-in-out infinite;
+    font-family: 'Rochester';
+}
+
+@keyframes colorChange {
+    0% {
+        color: #666; /* Start with the original color */
+    }
+    50% {
+        color: #ff0000; /* Change to red midway through */
+    }
+    100% {
+        color: #666; /* End with the original color */
+    }
+}
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+  
+   
+}
+/* Additional styles for the button */
+.buttons button {
+    background-color: #ed1cb2; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px; /* Border radius for a circular shape */
+    cursor: pointer;
+    font-family: 'Lemon'; /* Font family for the button */
+}
+
+.buttons button:hover {
+    background-color: #f6d1f0; /* Button background color on hover */
+}
+
+.large td{
+    font-size: 20px;
+}
+/* Dans votre fichier de styles (par exemple, styles.scss) */
+
+.skills {
+    h3 {
+      /* Style pour le titre "Skills" */
+      color: #333;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    li {
+      margin-bottom: 10px;
+    }
+  
+    .skill-name {
+      display: inline-block;
+      width: 80px; /* Ajustez la largeur selon vos besoins */
+      font-weight: bold;
+    }
+  
+    .skill-bar {
+      display: inline-block;
+      height: 20px; /* Ajustez la hauteur selon vos besoins */
+      background-color: #eee;
+    }
+  }
+  

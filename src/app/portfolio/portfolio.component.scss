@@ -1,0 +1,85 @@
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+ @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Rochester&display=swap');
+
+// Ajoutez un style pour les icônes
+.my-icon {
+  font-size: 20px;
+  color: #000000;
+   // Couleur personnalisée
+}
+i {
+    margin-right: 10px; // Ajoute une marge de 10 pixels à droite de l'icône
+  }
+  a {
+    font-size: 25px;
+    color: black; // Change la couleur du texte du lien en noir
+    text-decoration: none; 
+    font-family: 'Rochester';// Supprime le soulignement du lien, si vous le souhaitez
+  }
+.container {
+    display: flex;
+    height: 120vh; /* 100% de la hauteur de la vue (viewport height) */
+}
+
+.small {
+    flex: 1; /* La partie petite prend 1 unité de flexibilité */
+    background-color: rgb(253, 230, 244);
+    padding: 20px;
+   
+}
+
+.large {
+    flex: 4; /* La partie grande prend 3 unités de flexibilité */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* Styles pour le texte à l'intérieur de .small */
+.small h2 {
+    font-size: 30px;
+    color: #333; 
+    /* Couleur du texte pour le titre */
+    margin-bottom: 170px;
+    font-family: 'Rochester';
+}
+
+.small p {
+    color: #555; /* Couleur du texte pour le paragraphe */
+}
+
+/* Styles pour le texte à l'intérieur de .large */
+.large h2 {
+    text-align: left;
+    font-size: 50px;
+    color: #333; 
+    font-family: 'Rochester';
+    /* Couleur du texte pour le titre */
+} 
+
+
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+  
+   
+}
+.large p{
+    font-size: 30px;
+    color: #333; 
+    /* Couleur du texte pour le titre */
+  
+    font-family: 'Rochester';
+}
+.large img {
+    margin-left: 20px;
+    width: 25%; // Assurer que l'image remplit complètement le conteneur
+    height: auto; // Permettre à la hauteur de s'ajuster automatiquement
+    border: 10px solid #000000; // Ajouter une bordure
+    border-radius: 4px; // Ajouter une bordure arrondie
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ajouter une ombre légère
+  }
+  
